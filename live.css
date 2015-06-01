@@ -1,0 +1,47 @@
+body {
+	margin:0;
+	cursor:crosshair;
+	font-family: monaco;
+}
+
+.element {
+	width: 2400px;
+	height: 3500px;
+	cursor: zoom-in;
+	border:50px solid white;		
+}
+.element:hover {
+	-webkit-animation: bkgcolor 8s infinite;
+}
+.element img {
+	position:relative;
+	top:100px;
+	left:100px;
+	right:100px;
+	bottom:100px;
+	width:2200px;
+}
+@-webkit-keyframes bkgcolor {
+		0%   { background-color: rgba(0,255,255,0.8); }
+		25%   { background-color: rgba(255,0,255,0.8); }
+		50%   { background-color: rgba(255,255,0,0.8); }
+		75%   { background-color: rgba(0,255,0,0.8); }
+		100%   { background-color: rgba(0,255,255,0.8); }
+}
+
+#enter {
+	background-color:lightgray;
+	position:absolute;
+	top:200px;
+	left:200px;
+	right:200px;
+	bottom:200px;
+	padding:1em;
+	font-size:2em;
+	line-height:1.5;
+	z-index: 999;
+}
+a {
+	color:black;
+	cursor:pointer;
+}
